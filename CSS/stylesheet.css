@@ -91,6 +91,16 @@ body .load-image .owner-management a {
   color: #0AC2CC;
 }
 
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+}
+.scrollin {
+opacity : 1;
+transition : 1s;
+}
+
 body .load-image .owner-management a:hover {
   text-decoration: none;
   filter: alpha(opacity=60);
@@ -115,20 +125,6 @@ body .load-image .owner-management .management span a {
 
 body .load-image .owner-management .management a {
   color: #EA9AB2;
-}
-
-body .load-image .fadein {
-  opacity: 0;
-  -webkit-transform: translate(0, 50px);
-          transform: translate(0, 50px);
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-}
-
-body .load-image .scrollin {
-  opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 body .greeting {
@@ -178,7 +174,7 @@ body .greeting .company-logo img {
   margin-right: 10px;
 }
 
-body .greeting .fadeout {
+/* body .greeting .fadeout {
   opacity: 0;
   -webkit-transition: all 800ms;
   transition: all 800ms;
@@ -288,7 +284,7 @@ body .greeting .effect-scroll {
   opacity: 1;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-}
+} */
 
 body .member-list {
   padding: 80px;

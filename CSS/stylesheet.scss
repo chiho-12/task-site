@@ -139,28 +139,31 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    & li {
-      list-style: none;
-    }
-    & img {
-      width: 200px;
-      height: 150px;
-      margin-right: 10px;
-      }
-    }
+
     .fadeout {
-      opacity : 0;
-      transition : all 800ms;
-      @for $i from 1 through 20 {
-        &:nth-child(#{$i}) {
-         animation-delay: -20 / $i;
-       }
+      & li {
+        list-style: none;
       }
+      & img {
+        width: 200px;
+        height: 150px;
+        margin-right: 10px;
+        }
       }
-    .effect-scroll {
-      opacity : 1;
-      animation-delay: 3s;
     }
+    // .fadeout {
+    //   opacity : 0;
+    //   transition : all 800ms;
+    //   @for $i from 1 through 20 {
+    //     &:nth-child(#{$i}) {
+    //      animation-delay: -20 / $i;
+    //    }
+    //   }
+    //   }
+    // .effect-scroll {
+    //   opacity : 1;
+    //   animation-delay: 3s;
+    // }
 
    }
 
