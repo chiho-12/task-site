@@ -23,12 +23,10 @@ fadeItems.forEach((item, index) => {
 
 
 // section4
-    var swiper = new Swiper('.swiper-containerr', {
-        slidesPerView: 3,
-        spaceBetween: 0,
-        initialSlide: 2,
-        loop: true,    
-    });
+var swiper = new Swiper('.swiper-container', {
+ slidesPreview: 3,
+ loop: true,
+});
 
 
 // section6
