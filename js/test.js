@@ -1,3 +1,4 @@
+/* <section1> */
 const fadein = () => {
     const target = document.querySelector("#js-fadein");
     if (target.classList.contains("scrollin")) {
@@ -10,6 +11,7 @@ const fadein = () => {
 
 document.addEventListener("scroll", fadein);
 
+// section2
 const fadeItems = document.querySelectorAll("li")
 fadeItems.forEach((item, index) => {
  ScrollReveal().reveal(`.fadeout${index + 1}` ,{
@@ -19,10 +21,17 @@ fadeItems.forEach((item, index) => {
     });
 })
 
-    var mySwiper = new Swiper('.case-study', {
-        loop: true,
+
+// section4
+    var swiper = new Swiper('.swiper-containerr', {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        initialSlide: 2,
+        loop: true,    
     });
 
+
+// section6
     const sideinItems = document.querySelectorAll("li")
     sideinItems.forEach((item, index) => {
      ScrollReveal().reveal(`.ml${index + 1}` ,{
@@ -34,12 +43,14 @@ fadeItems.forEach((item, index) => {
     });
 })
 
+// section7
 ScrollReveal().reveal('.bf-box', {
  origin: 'bottom',
  distance: '50px',
  duration: 800,
 });
 
+// footer
 const bottomf = document.querySelector(".bottom-form");
 window.addEventListener('scroll', () => {
 const currentY = window.pageYOffset;

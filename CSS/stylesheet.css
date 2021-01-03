@@ -1,4 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
+  width: 100%;
+}
+
+body .load-image {
   width: 100%;
 }
 
@@ -9,11 +18,14 @@ body .load-image .header-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+body .load-image .header-nav .container {
   padding: 10px;
 }
 
-body .load-image .header-nav a {
-  display: block;
+body .load-image .header-nav .container a {
+  display: inline-block;
   text-decoration: none;
   background: #01293A;
   color: white;
@@ -23,7 +35,7 @@ body .load-image .header-nav a {
   font-size: 12px;
 }
 
-body .load-image .header-nav .login {
+body .load-image .header-nav .container .login {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -163,15 +175,22 @@ body .greeting .company-logo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 80px;
+}
+
+body .greeting .company-logo li {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 body .greeting .company-logo li img {
   width: 200px;
   height: 150px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 body .member-list {
@@ -646,7 +665,6 @@ body .case-study .swiper-container .swiper-wrappe .swiper-slide .sentence .leadm
 
 .content-wrapper {
   width: 100%;
-  padding: 20px;
   height: 300px;
 }
 
@@ -685,33 +703,34 @@ body .case-study .swiper-container .swiper-wrappe .swiper-slide .sentence .leadm
   font-size: 11px;
 }
 
-footer {
-  background-color: white;
-}
-
 footer .bottom-form {
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 0;
   -webkit-transition: opacity 350ms ease;
   transition: opacity 350ms ease;
   position: fixed;
-  left: 350px;
+  left: 0px;
   bottom: 0px;
   z-index: 1;
+  padding: 10px;
 }
 
 footer .bottom-form a {
   background: #EA9AB2;
   text-decoration: none;
   border-radius: 8px;
-  margin-right: 30px;
+  margin: 10px 30px 10px 0;
 }
 
 footer .bottom-form a p {
-  padding: 0 25px;
+  padding: 10px 25px;
   font-size: 18px;
   color: black;
 }
@@ -728,7 +747,7 @@ footer .bottom-form a:hover {
 }
 
 footer .bottom-form .right {
-  padding: 0 40px;
+  padding: 0 30px;
   -webkit-box-shadow: 0 4px 6px 0 rgba(153, 169, 176, 0.4);
           box-shadow: 0 4px 6px 0 rgba(153, 169, 176, 0.4);
 }
